@@ -1,0 +1,88 @@
+x = 12;
+12
+x
+12
+typeof x
+'number'
+x = "hello"
+'hello'
+typeof x
+'string'
+var x = 15;
+undefined
+x
+15
+let x1 = 10;
+undefined
+x1 = 45;
+45
+let x1 = 20;
+undefined
+const x2 = 10;
+undefined
+x2 = 20;
+VM300:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:4
+(anonymous) @ VM300:1
+let a = 12;
+undefined
+let b = 21;
+undefined
+a + b
+33
+a - b
+-9
+let b = "5";
+undefined
+a + blur 
+'12function blur() { [native code] }'
+a + b
+'125'
+a - b
+7
+a * b
+60
+a / b
+2.4
+a + b + "10"
+'12510'
+a + b + 10
+'12510'
+"10" - "5"
+5
+"hello" - "world"
+NaN
+parseInt("10")
+10
+parseInt("hello")
+NaN
+parseInt("1hello0")
+1
+parseInt("10hello")
+10
+parseInt("10hello98")
+10
+10 + "5"
+'105'
+10 + 10 + "5"
+'205'
+"5" + 10
+'510'
+"5" + 10 + 10
+'51010'
+x = 12;
+12
+typeof x
+'number'
+x = "hello"
+'hello'
+typeof x
+'string'
+x = 34.34
+34.34
+typeof x
+'number'
+x = true;
+true
+typeof x
+'boolean'
