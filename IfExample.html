@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>If Else Example...</h1>
+    <input type="text" id="box_1">
+    <button onclick="validate()">Check Age</button>
+    <h2 id="result"></h2>
+
+    <script>
+        function validate() {
+            var userage = document.getElementById("box_1").value;
+            var output = document.getElementById("result");
+            userage = parseInt(userage);
+            if(userage > 18 && userage < 30) {
+                output.innerHTML = "Valid for normal registration...";
+            }
+            else if(userage < 18) {
+                output.innerHTML = "Cannot register, age is below 18...";
+            }
+            else if(userage >= 30 && userage < 60) {
+                output.innerHTML = "Valid for prime registration...";
+            }
+        }
+    </script>
+    
+</body>
+</html>

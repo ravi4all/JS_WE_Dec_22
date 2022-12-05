@@ -1,0 +1,23 @@
+Data Types
+
+- Primitive
+  - number, string, undefined, null, boolean, bigint
+- Non-Primitive
+  - object
+
+Operators
+- Arithmetic Operators
+  +,-,/,*,%
+- Assignment Operators
+  =
+- Comparison Operators
+  ==, ===, >, <, <=, >=, !=
+- Logical Operators
+  &&, ||, !
+- Exponentiation Operators
+  **
+
+
+- Greatest of 3 numbers
+- Even Odd
+- Check if year is a leap year

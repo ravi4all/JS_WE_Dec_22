@@ -5,18 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- <script src="calc.js"></script> -->
 </head>
 <body>
 
-    <input type="text" placeholder="Enter your name" id="box_1">
-    <button onclick="greet()">Greet User</button>
+    <h1>Basic Calculator</h1>
 
-    <script>
-        function greet() {
-            var username = document.getElementById("box_1");
-            console.log("Hello", username.value);
-        }
-    </script>
+    <table>
+        <tr>
+            <td>Enter first number</td>
+            <td>
+                <input type="text" placeholder="Enter first num" id="box_1">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter second number</td>
+            <td>
+                <input type="text" placeholder="Enter second num" id="box_2">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button onclick="add()">Add</button>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Result is <span id="res"></span></h2>
+
+    <script src="calc.js"></script>
     
 </body>
 </html>
