@@ -16,8 +16,31 @@ Operators
   &&, ||, !
 - Exponentiation Operators
   **
+- Increment/Decrement
+  ++i, i++, --i, i--
 
 
 - Greatest of 3 numbers
 - Even Odd
 - Check if year is a leap year
+
+Loops
+- for
+- while
+- do...while
+
+- Sum of n natural number
+ i/p : 6
+ o/p : 1+2+3+4+5+6 = 21
+
+Grading System
+- take marks of 3 subjects from user an input
+- now do sum and find average and percentage of marks
+- now if student is having more than 90% than show 'A' grade
+- if student is having more than 80% but less than 90% than show 'B' grade
+- if student is having more than 70% but less than 80% than show 'C' grade
+- else show D grade
+
+Prime Number - divisible by only 1 and itself
+- take a number from user as input and show if it is prime or not
+
