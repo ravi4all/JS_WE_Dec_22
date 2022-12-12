@@ -44,3 +44,9 @@ Grading System
 Prime Number - divisible by only 1 and itself
 - take a number from user as input and show if it is prime or not
 
+Basic Calculator Using If Else
+
+Armstrong Number
+153 = 1**3 + 5**3 + 3**3 = 153
+
+Simple Interest Calculator
