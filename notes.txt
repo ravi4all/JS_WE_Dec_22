@@ -50,3 +50,11 @@ Armstrong Number
 153 = 1**3 + 5**3 + 3**3 = 153
 
 Simple Interest Calculator
+
+Counter App
+- two buttons and one text box
+  - one button will increment number
+  - one button will decrement number
+
+Greet Example
+- take input from user and show output on UI

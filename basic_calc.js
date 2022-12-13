@@ -20,7 +20,20 @@ window.addEventListener("load", function() {
 });
 
 function calc() {
-    console.log(this.value);
+    // console.log(this.value);
+    var opr = this.value;
+    if(opr == "+") {
+        result.value = parseInt(fnum.value) + parseInt(snum.value);
+    }
+    else if(opr == "-") {
+        result.value = parseInt(fnum.value) - parseInt(snum.value);
+    }
+    else if(opr == "/") {
+        result.value = parseInt(fnum.value) / parseInt(snum.value); 
+    }
+    else {
+        result.value = parseInt(fnum.value) * parseInt(snum.value);
+    }
     // result.value = parseInt(fnum.value) + parseInt(snum.value);
 }
 
