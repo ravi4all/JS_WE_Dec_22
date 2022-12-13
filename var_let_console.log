@@ -1,0 +1,175 @@
+var arr = [4,3,5,1,4,6,8,23,34,11,56];
+undefined
+arr.length
+11
+arr[0]
+4
+arr[1]
+3
+arr[arr.length - 1];
+56
+for(var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+VM529:2 4
+VM529:2 3
+VM529:2 5
+VM529:2 1
+VM529:2 4
+VM529:2 6
+VM529:2 8
+VM529:2 23
+VM529:2 34
+VM529:2 11
+VM529:2 56
+undefined
+for(var i = 0; i < arr.length; i++) {
+    if(arr[i] % 2 != 0) {
+        console.log(arr[i], "is odd");
+    }
+}
+VM737:3 3 'is odd'
+VM737:3 5 'is odd'
+VM737:3 1 'is odd'
+VM737:3 23 'is odd'
+VM737:3 11 'is odd'
+undefined
+for(var i = 0; i < arr.length; i++) {
+    if(arr[i] % 2 != 0) {
+        console.log(arr[i] + " is odd");
+    }
+}
+VM785:3 3 is odd
+VM785:3 5 is odd
+VM785:3 1 is odd
+VM785:3 23 is odd
+VM785:3 11 is odd
+undefined
+for(let i of arr) {
+    console.log(i);
+}
+VM883:2 4
+VM883:2 3
+VM883:2 5
+VM883:2 1
+VM883:2 4
+VM883:2 6
+VM883:2 8
+VM883:2 23
+VM883:2 34
+VM883:2 11
+VM883:2 56
+undefined
+for(let i of arr) {
+    if(i % 2 != 0) {
+        console.log(i);
+    }
+}
+VM934:3 3
+VM934:3 5
+VM934:3 1
+VM934:3 23
+VM934:3 11
+undefined
+function showName() {
+    var name = "Ram";
+    if(name == "Ram") {
+        console.log("Name is",name)
+        name = "Sharma";
+    }
+    console.log("Name is",name)
+}
+undefined
+showName()
+VM1355:4 Name is Ram
+VM1355:7 Name is Sharma
+undefined
+function showName() {
+    var name = "Ram";
+    if(name == "Ram") {
+        console.log("Name is",name)
+        var name = "Sharma";
+    }
+    console.log("Name is",name)
+}
+undefined
+showName()
+VM1407:4 Name is Ram
+VM1407:7 Name is Sharma
+undefined
+function showName() {
+    let name = "Ram";
+    if(name == "Ram") {
+        console.log("Name is",name)
+        let name = "Sharma";
+    }
+    console.log("Name is",name)
+}
+undefined
+showName()
+VM1467:4 Uncaught ReferenceError: Cannot access 'name' before initialization
+    at showName (<anonymous>:4:31)
+    at <anonymous>:1:1
+showName @ VM1467:4
+(anonymous) @ VM1473:1
+function showName() {
+    let name = "Ram";
+    if(name == "Ram") {
+        let lastname = "Sharma";
+        console.log("Last Name is",lastname);
+    }
+    console.log("Name is",name + " " + lastName)
+}
+undefined
+showName()
+VM1697:5 Last Name is Sharma
+VM1697:7 Uncaught ReferenceError: lastName is not defined
+    at showName (<anonymous>:7:40)
+    at <anonymous>:1:1
+showName @ VM1697:7
+(anonymous) @ VM1703:1
+function showName() {
+    var name = "Ram";
+    if(name == "Ram") {
+        var lastname = "Sharma";
+        console.log("Last Name is",lastname);
+    }
+    console.log("Name is",name + " " + lastName)
+}
+undefined
+showName()
+VM1743:5 Last Name is Sharma
+VM1743:7 Uncaught ReferenceError: lastName is not defined
+    at showName (<anonymous>:7:40)
+    at <anonymous>:1:1
+showName @ VM1743:7
+(anonymous) @ VM1749:1
+function showName() {
+    var name = "Ram";
+    if(name == "Ram") {
+        var lastname = "Sharma";
+        console.log("Last Name is",lastname);
+    }
+    console.log("Name is",name + " " + lastname);
+}
+undefined
+showName()
+VM1791:5 Last Name is Sharma
+VM1791:7 Name is Ram Sharma
+undefined
+function showName() {
+    let name = "Ram";
+    if(name == "Ram") {
+        let lastname = "Sharma";
+        console.log("Last Name is",lastname);
+    }
+    console.log("Name is",name + " " + lastname);
+}
+undefined
+showName()
+VM1847:5 Last Name is Sharma
+VM1847:7 Uncaught ReferenceError: lastname is not defined
+    at showName (<anonymous>:7:40)
+    at <anonymous>:1:1
+showName @ VM1847:7
+(anonymous) @ VM1853:1
