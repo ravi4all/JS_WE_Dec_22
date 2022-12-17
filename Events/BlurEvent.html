@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Blur Event</h1>
+
+    <input type="text" title="first name" placeholder="Enter your first name" onblur="validate(this)">
+    <input type="text" title="last name" placeholder="Enter your last name" onblur="validate(this)">
+    <input type="text" title="email" placeholder="Enter your email" onblur="validate(this)">
+    <input type="password" title="password" placeholder="Enter your password" onblur="validate(this)">
+    <br> <br>
+    <span id="msg"></span>
+    
+    <script>
+        function validate(obj) {
+            // alert("Blur Event Called...");
+            // console.log(obj);
+            var data = obj.value;
+            var span = document.querySelector("#msg");
+            // if(data == "") {
+            //     span.innerHTML = "Please Enter your name";
+            // }
+            // else {
+            //     span.innerHTML = "";
+            // }
+            var title = obj.title;
+            if(data == "") {
+                span.innerHTML = "Please enter your " + title;
+                obj.style.border = "1px solid red";
+            }
+            else {
+                span.innerHTML = "";
+                obj.style.border = "1px solid black";
+            }
+        }
+    </script>
+</body>
+</html>

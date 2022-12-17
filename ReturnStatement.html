@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Return Statement</h1>
+
+    <script>
+        function add() {
+            // var fnum = 12;
+            // var snum = 32;
+            // var sum = fnum + snum;
+            // return snum;
+            var arr = [{"name" : "John", "age" : 45},
+             {"name" : "Sam", "age" : 49}];
+            var names = [];
+            for(var i = 0; i < arr.length; i++) {
+                // names.push(arr[i].name);
+                names.push({"username" : arr[i].name});
+                // console.log(arr[i]);
+                // return arr[i];
+            }
+            return names;
+        }
+        var output = add();
+        console.log(output);
+    </script>
+    
+</body>
+</html>
