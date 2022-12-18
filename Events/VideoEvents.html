@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Video Events</h1>
+
+    <video controls>
+        <source src="video_1.mp4">
+    </video>
+    
+    <script>
+        var video = document.querySelector("video");
+        window.addEventListener("load", function() {
+            setTimeout(() => {
+                console.log("Total Duration :",video.duration);
+            }, 1000);
+            console.log("Current Playing :",video.currentSrc);
+            window.setInterval(function() {
+                console.log("Current Time :",video.currentTime);
+            }, 1000);
+            video.onpause = videoPause;
+            video.onplay = videoPlay;
+        })
+        function videoPause() {
+            console.log("Video Paused...");
+        }
+        function videoPlay() {
+            console.log("Video Started...");
+        }
+    </script>
+</body>
+</html>
