@@ -1,0 +1,35 @@
+var employees = [{name:"John",dept:"IT"}, {name:"Sam",dept:"HR"}, {name:"Max",dept:"HR"}];
+undefined
+employees.forEach(function(obj) {
+    console.log(obj.name + ","+ obj.dept);
+})
+VM4336:2 John,IT
+VM4336:2 Sam,HR
+VM4336:2 Max,HR
+undefined
+employees.filter((obj) => obj.dept == "HR");
+(2) [{…}, {…}]
+employees.map((obj) => obj.name)
+(3) ['John', 'Sam', 'Max']
+employees.filter(function(obj) {
+    return obj.dept == "HR";
+})
+(2) [{…}, {…}]
+employees.map(function(obj) {
+    return obj.name;
+})
+(3) ['John', 'Sam', 'Max']
+for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > 20) {
+        console.log(arr[i]);
+    }
+}
+undefined
+data.sort((a,b) => a - b);
+(12) [3, 7, 7, 12, 12, 12, 15, 19, 20, 23, 32, 56]
+data.filter(function(x) {
+    return x % 2 == 0;
+})
+(6) [12, 12, 12, 20, 32, 56]
+data
+(12) [3, 7, 7, 12, 12, 12, 15, 19, 20, 23, 32, 56]
